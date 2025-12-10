@@ -119,3 +119,42 @@ body::-webkit-scrollbar {
         margin: 20px;
     }
 }
+
+header {
+    background-color: transparent;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    /* Center the content */
+    width: 100%;
+    /* Make the brand take full width */
+}
+
+.navbar-brand img {
+    margin: auto;
+    /* Center the image */
+}
+
+.scroll-text {
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+    /* Animation for scrolling */
+    color: #fff;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+        /* Start off screen on the right */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* End off screen on the left */
+    }
+}
