@@ -14,8 +14,7 @@
     <nav class="navbar navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="./img/hipe-logo.png" alt="" width="150" height="135"
-                    class="d-inline-block align-text-top">
+                <img src="./img/hipe-logo.png" alt="" width="150" height="135" class="d-inline-block align-text-top">
             </a>
         </div>
     </nav>
@@ -24,60 +23,108 @@
 <div class="wrapper rounded bg-white">
 
     <div class="h3">Registration Form</div>
-
-    <div class="form">
-        <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
-                <label>First Name</label>
-                <input type="text" class="form-control" required>
-            </div>
-            <div class="col-md-6 mt-md-0 mt-3">
-                <label>Last Name</label>
-                <input type="text" class="form-control" required>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
-                <label>Birthday</label>
-                <input type="date" class="form-control" required>
-            </div>
-            <div class="col-md-6 mt-md-0 mt-3">
-                <label>Gender</label>
-                <div class="d-flex align-items-center mt-2">
-                    <label class="option">
-                        <input type="radio" name="radio">Male
-                        <span class="checkmark"></span>
-                    </label>
-                    <label class="option ms-4">
-                        <input type="radio" name="radio">Female
-                        <span class="checkmark"></span>
-                    </label>
+    <form>
+        <div class="form">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>First Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Last Name</label>
+                    <input type="text" class="form-control" required>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
-                <label>Email</label>
-                <input type="email" class="form-control" required>
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Phone Number</label>
+                    <input type="tel" class="form-control" required>
+                </div>
             </div>
-            <div class="col-md-6 mt-md-0 mt-3">
-                <label>Phone Number</label>
-                <input type="tel" class="form-control" required>
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Date Of birth</label>
+                    <input type="date" class="form-control" required>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Gender</label>
+                    <div class="d-flex align-items-center mt-2">
+                        <label class="option">
+                            <input type="radio" name="radio">Male
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="option ms-4">
+                            <input type="radio" name="radio">Female
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class=" my-md-2 my-3">
-            <label>Subject</label>
-            <select id="sub" required>
-                <option value="" selected hidden>Choose Option</option>
-                <option value="Maths">Maths</option>
-                <option value="Science">Science</option>
-                <option value="Social">Social</option>
-                <option value="Hindi">Hindi</option>
-            </select>
-        </div>
-        <div class="btn btn-primary mt-3">Submit</div>
-    </div>
+            <div class=" my-md-2 my-3">
+                <label>Faculty or School</label>
+                <select id="sub" required>
+                    <option value="" selected hidden>Choose Option</option>
+                    <option value="soe">School of Engineering</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="bio">Biomedicals</option>
+                </select>
+            </div>
+            <div class=" my-md-2 my-3">
+                <label>Program of study</label>
+                <select id="sub" required>
+                    <option value="" selected hidden>Choose Option</option>
+                    <option value="swe">Software Engineering</option>
+                    <option value="Maths">Maths</option>
+                    <option value="Science">Science</option>
+                    <option value="Social">Social</option>
+                    <option value="market">marketing</option>
+                </select>
+            </div>
 
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Level</label>
+                    <input type="text" class="form-control" placeholder="e.g: level 300" required>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Mode of Study</label>
+                    <div class="d-flex align-items-center mt-2">
+                        <label class="option">
+                            <input type="radio" name="radio">full-time
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="option ms-4">
+                            <input type="radio" name="radio">part-time
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class=" my-md-2 my-3">
+                        <textarea class="form-control" name="address" id="" placeholder="enter your address"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-3">
+                    <label>Confirm Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" required style="margin-right: 8px;">I confirm that the above information is correct.
+            </div>
+            <div class="btn btn-primary mt-3">Submit</div>
+        </div>
+
+    </form>
 </div>
 
 
