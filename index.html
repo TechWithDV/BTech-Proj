@@ -23,42 +23,42 @@
 <div class="wrapper rounded bg-white">
 
     <div class="h3">Registration Form</div>
-    <form>
+    <form action="https://formspree.io/f/mblnzzne" method="POST">
         <div class="form">
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>First Name</label>
-                    <input type="text" class="form-control" required>
+                    <input name="firtName" type="text" class="form-control" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Last Name</label>
-                    <input type="text" class="form-control" required>
+                    <input name="lastName" type="text" class="form-control" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Email</label>
-                    <input type="email" class="form-control" required>
+                    <input name="email" type="email" class="form-control" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Phone Number</label>
-                    <input type="tel" class="form-control" required>
+                    <input name="phone" type="tel" class="form-control" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Date Of birth</label>
-                    <input type="date" class="form-control" required>
+                    <input name="dob" type="date" class="form-control" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Gender</label>
                     <div class="d-flex align-items-center mt-2">
                         <label class="option">
-                            <input type="radio" name="radio">Male
+                            <input name="male" type="radio" name="radio">Male
                             <span class="checkmark"></span>
                         </label>
                         <label class="option ms-4">
-                            <input type="radio" name="radio">Female
+                            <input name="female" type="radio" name="radio">Female
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -66,7 +66,7 @@
             </div>
             <div class=" my-md-2 my-3">
                 <label>Faculty or School</label>
-                <select id="sub" required>
+                <select name="faculty" id="sub" required>
                     <option value="" selected hidden>Choose Option</option>
                     <option value="soe">School of Engineering</option>
                     <option value="marketing">Marketing</option>
@@ -76,7 +76,7 @@
             </div>
             <div class=" my-md-2 my-3">
                 <label>Program of study</label>
-                <select id="sub" required>
+                <select name="course" id="sub" required>
                     <option value="" selected hidden>Choose Option</option>
                     <option value="swe">Software Engineering</option>
                     <option value="Maths">Maths</option>
@@ -89,40 +89,40 @@
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Level</label>
-                    <input type="text" class="form-control" placeholder="e.g: level 300" required>
+                    <input name="level" type="text" class="form-control" placeholder="e.g: level 300" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Mode of Study</label>
                     <div class="d-flex align-items-center mt-2">
                         <label class="option">
-                            <input type="radio" name="radio">full-time
+                            <input name="full-time" type="radio" name="radio">full-time
                             <span class="checkmark"></span>
                         </label>
                         <label class="option ms-4">
-                            <input type="radio" name="radio">part-time
+                            <input name="part-time" type="radio" name="radio">part-time
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class=" my-md-2 my-3">
-                        <textarea class="form-control" name="address" id="" placeholder="enter your address"></textarea>
+                        <textarea name="address" class="form-control" name="address" id="" placeholder="enter your address"></textarea>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Password</label>
-                    <input type="password" class="form-control" required>
+                    <input name="password" type="password" class="form-control" required>
                 </div>
                 <div class="col-md-6 mt-md-0 mt-3">
                     <label>Confirm Password</label>
-                    <input type="password" class="form-control" required>
+                    <input name="confirmPass" type="password" class="form-control" required>
                 </div>
             </div>
             <div>
-                <input type="checkbox" required style="margin-right: 8px;">I confirm that the above information is
+                <input name="verify" type="checkbox" required style="margin-right: 8px;">I confirm that the above information is
                 correct.
             </div>
-            <div class="btn btn-primary mt-3">Submit</div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
         </div>
 
     </form>
