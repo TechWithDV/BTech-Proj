@@ -158,3 +158,13 @@ header {
         /* End off screen on the left */
     }
 }
+
+.footer {
+    padding: 4rem 0;
+}
+.footer .container{
+    text-align: center;
+}
+.footer .container p {
+    color: #fff !important;
+}
